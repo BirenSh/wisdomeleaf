@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WishdomAssignment</string>
+    <string name="app_name">WisdomAssignment</string>
     <string name="description">Description</string>
     <string name="author">Author:</string>
     <string name="value_on_loading">value on Loading</string>
