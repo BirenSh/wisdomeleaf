@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                     }
                     Log.d("sizeofdata1",dataList.size.toString())
                     recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
-                    val adapter = WisdomLeafAdapter(dataList)
+                    val adapter = WisdomLeafAdapter(dataList,this@MainActivity)
                     recyclerView.adapter = adapter
                 }
             }
