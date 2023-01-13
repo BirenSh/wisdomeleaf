@@ -8,7 +8,7 @@ import android.view.Window
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.wishdomassignment.MainActivity
+import com.example.wishdomassignment.ui.MainActivity
 import com.example.wishdomassignment.R
 import com.example.wishdomassignment.models.ModelDataItem
 import com.squareup.picasso.Picasso

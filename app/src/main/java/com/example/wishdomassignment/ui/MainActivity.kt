@@ -1,14 +1,14 @@
-package com.example.wishdomassignment
+package com.example.wishdomassignment.ui
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Adapter
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.example.wishdomassignment.ApiInterface
 import com.example.wishdomassignment.adapter.WisdomLeafAdapter
 import com.example.wishdomassignment.databinding.ActivityMainBinding
 import com.example.wishdomassignment.models.ModelData
