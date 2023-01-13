@@ -1,5 +1,6 @@
 package com.example.wishdomassignment.adapter
 
+import android.annotation.SuppressLint
 import android.app.Dialog
 import android.view.LayoutInflater
 import android.view.View
@@ -17,7 +18,6 @@ class WisdomLeafAdapter(val dataList: ArrayList<ModelDataItem>, val context: Mai
     inner class MyViewHolder(view:View):RecyclerView.ViewHolder(view){
         val imageView:ImageView = view.findViewById(R.id.imageViewL)
         val imageTitle:TextView = view.findViewById(R.id.imageTitle)
-        val imageDesc:TextView = view.findViewById(R.id.imageDesc)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -35,6 +35,7 @@ class WisdomLeafAdapter(val dataList: ArrayList<ModelDataItem>, val context: Mai
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun showDialog(dataPos: ModelDataItem) {
         val dialog = Dialog(context)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)

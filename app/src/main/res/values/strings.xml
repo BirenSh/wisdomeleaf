@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">WishdomAssignment</string>
+    <string name="description">Description</string>
+    <string name="author">Author:</string>
+    <string name="value_on_loading">value on Loading</string>
+    <string name="image_size">Image Size:</string>
+    <string name="image_source">Image Source:</string>
+    <string name="title">Title</string>
+    <string name="more_descr">Click for more Description</string>
+    <string name="contentdesc">contentDesc</string>
 </resources>
