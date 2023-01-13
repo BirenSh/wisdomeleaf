@@ -50,4 +50,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
     //picasso
     implementation 'com.squareup.picasso:picasso:2.8'
+
+    //swipe refresh
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 }
