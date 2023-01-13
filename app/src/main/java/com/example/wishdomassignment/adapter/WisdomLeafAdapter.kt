@@ -1,8 +1,10 @@
 package com.example.wishdomassignment.adapter
 
+import android.app.Dialog
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -29,9 +31,25 @@ class WisdomLeafAdapter(val dataList: ArrayList<ModelDataItem>, val context: Mai
         holder.imageTitle.text = dataPos.author
 //        holder.imageTitle.text = dataPos.author
         holder.imageView.setOnClickListener {
+            showDialog(dataPos)
         }
     }
 
+    private fun showDialog(dataPos: ModelDataItem) {
+        val dialog = Dialog(context)
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCancelable(false)
+        dialog.setContentView(R.layout.custom_dialog)
+        dialog.setCancelable(true)
+        val authorName = dialog.findViewById(R.id.authorTextDB) as TextView
+        authorName.text = dataPos.author
+        val imageSize = dialog.findViewById<TextView>(R.id.imageSizeDB)
+        imageSize.text = "${dataPos.width} X ${dataPos.height}"
+        val imageUrl:TextView = dialog.findViewById(R.id.imageLinkDB)
+        imageUrl.text = dataPos.url
+        dialog.create()
+        dialog.show()
+    }
 
 
     override fun getItemCount(): Int {
